@@ -26,12 +26,6 @@ pipeline {
                 sh 'rm -rf target/*' 
             }
         }
-        stage('Debug - Voir utilisateur ') {
-            steps {
-                  sh 'whoami'
-                  sh 'id'
-    }
-}
 
         stage('Déploiement des Fichiers Statiques') {
             steps {
@@ -45,9 +39,6 @@ pipeline {
                     // 2. Copier les fichiers statiques (index.html, etc.)
                     sh "cp -r * ${env.DEPLOY_DIR}/" 
                     
-                    // Optionnel: Définir les bonnes permissions si nécessaire
-                    //sh "sudo chown -R ubuntu:ubuntu ${env.DEPLOY_DIR}"
-                    //echo "Fichiers copiés avec succès dans ${env.DEPLOY_DIR}"
                 }
             }
         }
