@@ -26,7 +26,7 @@ pipeline {
                 sh 'rm -rf target/*' 
             }
         }
-        stage('Debug - Voir utilisateur') {
+        stage('Debug - Voir utilisateur ') {
             steps {
                   sh 'whoami'
                   sh 'id'
