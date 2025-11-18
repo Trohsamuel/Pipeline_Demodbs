@@ -6,7 +6,7 @@ pipeline {
         DEPLOY_DIR = '/var/www/demodbs' 
         
         // ID du Credential Jenkins pour Azure DevOps (basé sur votre capture)
-        CREDENTIAL_ID_GIT = 'azure_demodbs' 
+        CREDENTIAL_ID_GIT = 'azure_demo' 
         
         // URL de clonage du dépôt Azure DevOps
         REPO_URL = 'https://mondevsrv.visualstudio.com/DefaultCollection/DemoQuantech/_git/DemoQuantech' 
