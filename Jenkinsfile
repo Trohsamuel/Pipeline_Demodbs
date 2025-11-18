@@ -19,7 +19,7 @@ pipeline {
                 // Utilise le Credential pour s'authentifier lors du clone
                 withCredentials([usernamePassword(credentialsId: env.CREDENTIAL_ID_GIT, usernameVariable: 'GIT_USERNAME', passwordVariable: 'GIT_PASSWORD')]) {
                     git url: env.REPO_URL, 
-                        branch: 'main', // Assurez-vous que c'est la bonne branche
+                        branch: 'Filliale', // Assurez-vous que c'est la bonne branche
                         credentialsId: env.CREDENTIAL_ID_GIT 
                 }
                 // Nettoyer tous les anciens fichiers de build, sauf le dépôt cloné
